@@ -8,4 +8,4 @@ RUN npm i
 
 EXPOSE 9000
 
-CMD ["node", "index.js"]
+CMD ["node", "server.js"]

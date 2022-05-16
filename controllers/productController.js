@@ -7,42 +7,43 @@ let Product = require('../models/product')
 const Axios = require("axios")
 
 
-function infolevellogger(text) {
-    const slack = Axios.post(
-        'https://hooks.slack.com/services/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', {
+
+async function  infolevellogger(text) {
+    const slack = await Axios.post(
+        'https://hooks.slack.com/services/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', {
         text: text
     }
     );
 }
 
-function warnlevellogger(text) {
-    const slack = Axios.post(
-        'https://hooks.slack.com/services/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', {
+async function warnlevellogger(text) {
+    const slack = await Axios.post(
+        'https://hooks.slack.com/services/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', {
         text: text
     }
     );
 }
 
 
-function generalLevelLogger(text) {
-    const slack = Axios.post(
-        'https://hooks.slack.com/services/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', {
+async function generalLevelLogger(text) {
+    const slack = await Axios.post(
+        'https://hooks.slack.com/services/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', {
         text: text
     }
     );
 }
 
-function fatalLevelLogger(text) {
-    const slack = Axios.post(
-        'https://hooks.slack.com/services/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', {
+async function fatalLevelLogger(text) {
+    const slack = await Axios.post(
+        'https://hooks.slack.com/services/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', {
         text: text
     }
     );
 }
 
-function errorlevelLogger(text) {
-    const slack = Axios.post(
-        'https://hooks.slack.com/services/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', {
+async function errorlevelLogger(text) {
+    const slack = await Axios.post(
+        'https://hooks.slack.com/services/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', {
         text: text
     }
     );
