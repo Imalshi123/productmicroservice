@@ -90,7 +90,7 @@ mongoose.connect(MONGODB_URI, {
 
 }, (error) => {
     if (error) {
-        console.log('Database Error: ', error.message);
+        console.log('Database Error : ', error.message);
         errorlevelLogger('Database Error: ' + error.message + " TimeStamp :" + getTimeStamp())
     }
 });
