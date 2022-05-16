@@ -9,7 +9,7 @@ const Axios = require("axios")
 
 async function  infolevellogger(text) {
     const slack = await Axios.post(
-        'https://hooks.slack.com/services/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', {
+        'https://hooks.slack.com/services/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', {
         text: text
     }
     );
@@ -17,7 +17,7 @@ async function  infolevellogger(text) {
 
 async function warnlevellogger(text) {
     const slack = await Axios.post(
-        'https://hooks.slack.com/services/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', {
+        'https://hooks.slack.com/services/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', {
         text: text
     }
     );
@@ -26,7 +26,7 @@ async function warnlevellogger(text) {
 
 async function generalLevelLogger(text) {
     const slack = await Axios.post(
-        'https://hooks.slack.com/services/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', {
+        'https://hooks.slack.com/services/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', {
         text: text
     }
     );
@@ -34,7 +34,7 @@ async function generalLevelLogger(text) {
 
 async function fatalLevelLogger(text) {
     const slack = await Axios.post(
-        'https://hooks.slack.com/services/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', {
+        'https://hooks.slack.com/services/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', {
         text: text
     }
     );
@@ -42,7 +42,7 @@ async function fatalLevelLogger(text) {
 
 async function errorlevelLogger(text) {
     const slack = await Axios.post(
-        'https://hooks.slack.com/services/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', {
+        'https://hooks.slack.com/services/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', {
         text: text
     }
     );
