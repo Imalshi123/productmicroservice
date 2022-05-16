@@ -6,10 +6,10 @@ const bodyParser = require('body-parser');
 const ProductController = require('./controllers/productController');
 const Axios = require("axios")
 
-
+dotenv.config();
 async function  infolevellogger(text) {
     const slack = await Axios.post(
-        'https://hooks.slack.com/services/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', {
+        process.env.webhook, {
         text: text
     }
     );
@@ -17,7 +17,7 @@ async function  infolevellogger(text) {
 
 async function warnlevellogger(text) {
     const slack = await Axios.post(
-        'https://hooks.slack.com/services/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', {
+        process.env.webhook, {
         text: text
     }
     );
@@ -26,7 +26,7 @@ async function warnlevellogger(text) {
 
 async function generalLevelLogger(text) {
     const slack = await Axios.post(
-        'https://hooks.slack.com/services/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', {
+        process.env.webhook, {
         text: text
     }
     );
@@ -34,7 +34,7 @@ async function generalLevelLogger(text) {
 
 async function fatalLevelLogger(text) {
     const slack = await Axios.post(
-        'https://hooks.slack.com/services/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', {
+        process.env.webhook, {
         text: text
     }
     );
@@ -42,7 +42,7 @@ async function fatalLevelLogger(text) {
 
 async function errorlevelLogger(text) {
     const slack = await Axios.post(
-        'https://hooks.slack.com/services/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', {
+        process.env.webhook, {
         text: text
     }
     );
@@ -79,7 +79,7 @@ function getTimeStamp() {
 }
 
 
-dotenv.config();
+
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
