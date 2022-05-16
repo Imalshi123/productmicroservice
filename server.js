@@ -83,7 +83,7 @@ function getTimeStamp() {
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT || 9009;
 const MONGODB_URI = process.env.MONGODB_URI;
 mongoose.connect(MONGODB_URI, {
     
@@ -106,3 +106,10 @@ app.listen(PORT, () => {
   //  warnlevellogger(`Micro Service Product Controller Server is up and running on PORT ${PORT}` + " TimeStamp :" + getTimeStamp())
 });
 app.use('/product', ProductController());
+
+app.get('/', (req, res) => {
+    res.send('Server Running in kuberntes')
+    
+  })
+  
+  
