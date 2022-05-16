@@ -90,14 +90,14 @@ module.exports = function () {
                     Status: "Sucess",
                     Message: "Product Created Sucessfully"
                 }
-                generalLevelLogger("Product Created Sucessfully" + " TimeStamp :" + getTimeStamp())
+               // generalLevelLogger("Product Created Sucessfully" + " TimeStamp :" + getTimeStamp())
                 res.status(201).send(data);
             }).catch(err => {
                 var data = {
                     Status: "Fail",
                     Message: "Unexpected Error PLease Contact System Admin"
                 }
-                errorlevelLogger("Unexpected Error PLease Contact System Admin " + err + " TimeStamp :" + getTimeStamp())
+             //   errorlevelLogger("Unexpected Error PLease Contact System Admin " + err + " TimeStamp :" + getTimeStamp())
                 res.status(200).send(data);
             });
 
@@ -114,14 +114,14 @@ module.exports = function () {
                     Message: "Retrived All Room Data",
                     data: dataX
                 }
-                generalLevelLogger("Retrived All Room Data" + " TimeStamp :" + getTimeStamp())
+            //    generalLevelLogger("Retrived All Room Data" + " TimeStamp :" + getTimeStamp())
                 res.status(200).send(dataX);
             } else {
                 var data = {
                     Status: "Fais",
                     Message: "Unexpected Error PLease Contact System Admin"
                 }
-                errorlevelLogger("Unexpected Error PLease Contact System Admin " + err + " TimeStamp :" + getTimeStamp())
+              //  errorlevelLogger("Unexpected Error PLease Contact System Admin " + err + " TimeStamp :" + getTimeStamp())
                 res.status(200).send(data);
             }
         })
@@ -140,14 +140,14 @@ module.exports = function () {
                     Message: "Retrived All Room Data",
                     data: filtered
                 }
-                generalLevelLogger("Retrived All Room Data" + " TimeStamp :" + getTimeStamp())
+              //  generalLevelLogger("Retrived All Room Data" + " TimeStamp :" + getTimeStamp())
                 res.status(200).send(data);
             } else {
                 var data = {
                     Status: "Fail",
                     Message: "Unexpected Error PLease Contact System Admin"
                 }
-                errorlevelLogger("Unexpected Error PLease Contact System Admin " + err + " TimeStamp :" + getTimeStamp())
+//errorlevelLogger("Unexpected Error PLease Contact System Admin " + err + " TimeStamp :" + getTimeStamp())
                 res.status(200).send(data);
             }
         })
@@ -168,14 +168,14 @@ module.exports = function () {
                         Status: "Sucess",
                         Message: "Room Data Updated"
                     }
-                    generalLevelLogger("Email Already Exists In The Database" + " TimeStamp :" + getTimeStamp())
+                  //  generalLevelLogger("Email Already Exists In The Database" + " TimeStamp :" + getTimeStamp())
                     res.status(200).send(data);
                 } else {
                     var data = {
                         Status: "Fail",
                         Message: "Room Data Updated"
                     }
-                    errorlevelLogger("Unexpected Error PLease Contact System Admin " + err + " TimeStamp :" + getTimeStamp())
+                 //   errorlevelLogger("Unexpected Error PLease Contact System Admin " + err + " TimeStamp :" + getTimeStamp())
                     res.status(200).send(data);
                 }
             })
@@ -184,7 +184,7 @@ module.exports = function () {
                 Status: "Fail",
                 Message: "Unexpected Error PLease Contact System Admin"
             }
-            errorlevelLogger("Unexpected Error PLease Contact System Admin " + err + " TimeStamp :" + getTimeStamp())
+           // errorlevelLogger("Unexpected Error PLease Contact System Admin " + err + " TimeStamp :" + getTimeStamp())
             res.status(200).send(data);
 
         }
@@ -200,7 +200,7 @@ module.exports = function () {
                         Status: "Sucess",
                         Message: "User Deleted"
                     }
-                    generalLevelLogger("User Deleted" + " TimeStamp :" + getTimeStamp())
+                  //  generalLevelLogger("User Deleted" + " TimeStamp :" + getTimeStamp())
                     res.status(200).send(data);
                 } else {
                     console.log(req.body, "here2")
@@ -208,7 +208,7 @@ module.exports = function () {
                         Status: "Fail",
                         Message: "Unexpected Error PLease Contact System Admin"
                     }
-                    errorlevelLogger("Unexpected Error PLease Contact System Admin " + err + " TimeStamp :" + getTimeStamp())
+                  //  errorlevelLogger("Unexpected Error PLease Contact System Admin " + err + " TimeStamp :" + getTimeStamp())
                     res.status(200).send(data);
                 }
             });
@@ -218,7 +218,7 @@ module.exports = function () {
                 Status: "Fail",
                 Message: "Unexpected Error PLease Contact System Admin"
             }
-            errorlevelLogger("Unexpected Error PLease Contact System Admin " + err + " TimeStamp :" + getTimeStamp())
+          //  errorlevelLogger("Unexpected Error PLease Contact System Admin " + err + " TimeStamp :" + getTimeStamp())
             res.status(200).send(data);
 
         }

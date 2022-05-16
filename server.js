@@ -93,16 +93,16 @@ mongoose.connect(MONGODB_URI, {
 }, (error) => {
     if (error) {
         console.log('Database Error : ', error.message);
-        errorlevelLogger('Database Error: ' + error.message + " TimeStamp :" + getTimeStamp())
+        //errorlevelLogger('Database Error: ' + error.message + " TimeStamp :" + getTimeStamp())
     }
 });
 app.use(express.static('./public'))
 mongoose.connection.once('open', () => {
     console.log('Database Connection Sucessfull For Micro Service Product Management');
-    warnlevellogger('Database Connection Sucessfull For Micro Service Product Management: '  + " TimeStamp :" + getTimeStamp())
+   // warnlevellogger('Database Connection Sucessfull For Micro Service Product Management: '  + " TimeStamp :" + getTimeStamp())
 });
 app.listen(PORT, () => {
     console.log(`Server is up and running on PORT ${PORT}`);
-    warnlevellogger(`Micro Service Product Controller Server is up and running on PORT ${PORT}` + " TimeStamp :" + getTimeStamp())
+  //  warnlevellogger(`Micro Service Product Controller Server is up and running on PORT ${PORT}` + " TimeStamp :" + getTimeStamp())
 });
 app.use('/product', ProductController());
