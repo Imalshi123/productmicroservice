@@ -102,7 +102,7 @@ mongoose.connection.once('open', () => {
    // warnlevellogger('Database Connection Sucessfull For Micro Service Product Management: '  + " TimeStamp :" + getTimeStamp())
 });
 app.listen(PORT, () => {
-    console.log(`Server is up and running on PORT ${PORT}`);
+    console.log(`Server is up and runnng on PORT ${PORT}`);
   //  warnlevellogger(`Micro Service Product Controller Server is up and running on PORT ${PORT}` + " TimeStamp :" + getTimeStamp())
 });
 app.use('/product', ProductController());
