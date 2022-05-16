@@ -1,7 +1,6 @@
 const express = require('express');
 
 const router = express.Router();
-var _ = require("underscore");
 const bcrypt = require('bcrypt');
 let Product = require('../models/product')
 const Axios = require("axios")

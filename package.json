@@ -18,8 +18,7 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "lightstep-opentelemetry-launcher-node": "^1.0.0",
-    "mongoose": "^6.3.3",
-    "underscore": "^1.13.3"
+    "mongoose": "^6.3.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
