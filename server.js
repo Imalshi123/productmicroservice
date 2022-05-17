@@ -108,7 +108,7 @@ app.listen(PORT, () => {
 app.use('/product', ProductController());
 
 app.get('/', (req, res) => {
-    res.send('Server Running in kuberntes')
+    res.send('Server Running n kubertes')
     
   })
   
