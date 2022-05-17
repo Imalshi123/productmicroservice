@@ -98,7 +98,7 @@ mongoose.connect(MONGODB_URI, {
 });
 app.use(express.static('./public'))
 mongoose.connection.once('open', () => {
-    console.log('Database Connection Sucessfull Fr icro ServiceProduct Management');
+    console.log('Database Connection Sucessfull Fricro ServiceProduct Management');
    // warnlevellogger('Database Connection Sucessfull For Micro Service Product Management: '  + " TimeStamp :" + getTimeStamp())
 });
 app.listen(PORT, () => {
